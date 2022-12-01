@@ -16,21 +16,19 @@ app = FastAPI()
 file='https://raw.githubusercontent.com/valentinafv96/SecondPart/main/data/openalexco_udea_pp_reduced.json'
 
 #JSON SCHEME
-#[{"student_id": str,
-# "Evaluation 1":{"value": int,
-#                 "%": int,
-#                 "Description": str
-#                 }, 
-# ...
-# }
+#[{"id": str,
+# "doi": str,
+# "title": str,
+# "display_name": str,
+# "publication_year": value,
+# "publication_date": str
+# ...}
 #]
 
 @app.get("/")
 def read_item(id: str = ""):
     '''
-    You can write the API documentation here:
-    
-    For example: 
+    Filtration of data is through the `id`, so the usage is as follows: 
     
     USAGE: http://127.0.0.1:8000/?id=https://openalex.org/W4289443651
     '''

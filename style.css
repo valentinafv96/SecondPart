@@ -1,11 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #070116;
+    background-color: #0d1137;
   }
   
   div {
     text-align: center;
-    background-color: rgb(41, 216, 216);
+    background-color: #a2d5c6;
     padding: 10px;
   }
   
@@ -23,7 +23,7 @@ body {
     letter-spacing: 2px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: linear-gradient( 160deg, #ff0000, #ec008c );
+    background-image: #d72631;
     border-radius: 30px;
     cursor: pointer;
   }
