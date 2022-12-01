@@ -13,7 +13,7 @@ import json
 
 app = FastAPI()
 
-file='https://raw.githubusercontent.com/valentinafv96/SecExam/main/data/openalexco_udea_pp_reduced.json'
+file='https://raw.githubusercontent.com/valentinafv96/SecondPart/main/data/openalexco_udea_pp_reduced.json'
 
 #JSON SCHEME
 #[{"student_id": str,
