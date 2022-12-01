@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #0d1137;
+    background-color: #077b8a;
   }
   
   div {
@@ -23,7 +23,7 @@ body {
     letter-spacing: 2px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: #d72631;
+    background-image: linear-gradient( 160deg, #d72631, #e93c59 );
     border-radius: 30px;
     cursor: pointer;
   }
