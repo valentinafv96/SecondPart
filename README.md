@@ -1,29 +1,38 @@
-# OpenAlexGroup
+# User instructions
+
+Install the following packages:
+
+```
+$ sudo pip3 install fastapi
+$ pip3 install uvicorn[standard]
+```
+
 ## Backend
-O use la documentación del API, a continuación, desplegando el botón "GET" y despúes de hacer click sobre el botón "Try it out", introducir la identificación en la caja "`student_id`" y pulsar el botón "Execute":
-* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-# Fast API
-See install options and usage at: https://fastapi.tiangolo.com/
+1. Download the ZIP repository.
+2. Extract the file.
+3. In the location of the file, type in terminal:
+
 ```
-$ uvicorn main:app --reload --host
+$ uvicorn main:app --reload
 ```
-and copy and paste the url in your browser, e.g:
 
-http://127.0.0.1:8000/
+4. Copy and paste the resultant url in your browser, e.g:
 
-You can now filter with the JSON keys into the url, e.g:
-
-http://127.0.0.1:8000/?student_id=1001735333
+ * [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
+
+5. Now filter by `id` one of the given articles into the url as follows:
+
+ * [http://127.0.0.1:8000/?id=https://openalex.org/W4280569373](http://127.0.0.1:8000/?id=https://openalex.org/W4280569373)
 
 ## Frontend
+
+6. Finally, to visualize de result obtained, open a new terminal, go to the location of the extracted file and type:
+
 ```
 $ python3 -m http.server 8001
 ```
 
-See:
-* https://www.geeksforgeeks.org/how-to-use-the-javascript-fetch-api-to-get-data/
-* https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript
-* https://stackoverflow.com/a/22790025/2268280
+The result will be the name, publication date and the location of the article filtered.
