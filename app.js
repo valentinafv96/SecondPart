@@ -57,7 +57,11 @@ function jsonList(item) {
   // get the required details from the local.json file to the div element using innerHTML
   div.innerHTML = `
         The paper with 'id': ${item.id}, is called: '${item.title}' and was published on ${item.publication_date}. 
-        Data taken from ${APIurl}`;
+        
+        </p>
+        
+        <p><i>Data taken from:</i></p> ${APIurl}`;
+        
   // attach the newly created div element to the original div element, in this case to the class '.output'
   output.append(div);
   // Add styling to the displayed content
